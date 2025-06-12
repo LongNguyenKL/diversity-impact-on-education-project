@@ -7,13 +7,16 @@ The study employs a causal inference approach, primarily utilizing a staggered D
 
 ![DID](https://github.com/LongNguyenKL/diversity-impact-on-education-project/blob/main/assets/did.png)
 
+## Documentation
+* ProjectEdSurvey.R: the source code of the study, including all the processes and analysis.
+* report_childk5p.edited.docx: the final report of the study.
+* project_report.pptx: summarized report using PowerPoint slides.
+* EdSurvey-ECLS.pds: detailed description of the longitudinal study by NCES.
+
 ## Dataset
 The project leveraged data from the **Early Childhood Longitudinal Studies (ECLS) kindergarten cohort of 2010-11** collected by the US Department of Education and the National Center for Educational Statistics (NCES). 
 
-Key characteristics of the dataset:
-* **Scope:** The ECLS program provides extensive data on child development, school readiness, and early school experiences, including various factors like family, school, and community. 
-* **Cohort:** The study specifically analyzed data from 18,174 children, tracking them from Fall 2010 to Spring 2016 (kindergarten to fifth grade). 
-* **Content:** Each child record contains assessment data, questionnaires, weights, imputation flags, and administrative variables. The raw dataset is expansive, containing 18,174 rows and 26,061 columns. 
+The ECLS program provides extensive data on child development, school readiness, and early school experiences, including various factors like family, school, and community. Each child record contains assessment data, questionnaires, weights, imputation flags, and administrative variables. The raw dataset is expansive, containing 18,174 rows and 26,061 columns. 
 
 ## Key Features (Steps Conducted in the Project)
 The project involved extensive data preparation and a robust analytical approach:
