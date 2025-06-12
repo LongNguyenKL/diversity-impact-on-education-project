@@ -25,12 +25,18 @@ The project involved extensive data preparation and a robust analytical approach
 ### 2. Descriptive Analysis
 Initial descriptive statistics were generated for all variables. Trends in children's average IRT-based scores across subjects were explored over the semesters, showing a general improvement in cognitive skills over time. 
 
+![irt](https://github.com/LongNguyenKL/diversity-impact-on-education-project/blob/main/assets/eda.png)
+
 ### 3. Difference-in-Differences (DiD) Analysis
 * **Staggered DiD Implementation:** A staggered DiD model was employed to account for the variability in the timing of "treatment" (when a child first attended a diverse school) across different individuals. This allowed for a nuanced analysis of the causal effect over time using the `event_time` variable, which represents semesters relative to the treatment start. 
-* **Fixed Effects Model:** A fixed effects regression model was utilized, controlling for time-invariant individual characteristics (e.g., natural abilities via `childid` fixed effects) and common time-specific effects (e.g., increasing curriculum difficulty via `sem` fixed effects). The `avg_irt` score was the dependent variable, with the interaction between `event_time` and `treated` representing the causal effect. Semester 1 (`event_time = -1`) was set as the consistent pre-treatment baseline. 
+* **Fixed Effects Model:** A fixed effects regression model was utilized, controlling for time-invariant individual characteristics (e.g., natural abilities via `childid` fixed effects) and common time-specific effects (e.g., increasing curriculum difficulty via `sem` fixed effects). The `avg_irt` score was the dependent variable, with the interaction between `event_time` and `treated` representing the causal effect. Semester 1 (`event_time = -1`) was set as the consistent pre-treatment baseline.
+
+![result](https://github.com/LongNguyenKL/diversity-impact-on-education-project/blob/main/assets/Screenshot%202025-05-07%20221133.png)
 
 ### 4. Robustness Checks
 The critical **parallel trends assumption** for DiD analysis was examined. The analysis indicated that the parallel trends assumption was generally met, despite minor deviations. 
+
+![trend](https://github.com/LongNguyenKL/diversity-impact-on-education-project/blob/main/assets/trend.png)
 
 ## Results
 The study's findings indicate a **positive and gradual impact of attending a diverse school on children’s academic performance over the semesters.** 
