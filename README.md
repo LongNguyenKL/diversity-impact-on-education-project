@@ -14,7 +14,7 @@ The study employs a causal inference approach, primarily utilizing a staggered D
 * EdSurvey-ECLS.pds: detailed description of the longitudinal study by NCES.
 
 ## Dataset
-The project leveraged data from the **Early Childhood Longitudinal Studies (ECLS) kindergarten cohort of 2010-11** collected by the US Department of Education and the National Center for Educational Statistics (NCES). 
+The project leveraged data from the [**Early Childhood Longitudinal Studies (ECLS) kindergarten cohort of 2010-11**](https://nces.ed.gov/ecls/dataproducts.asp) collected by the US Department of Education and the National Center for Educational Statistics (NCES). 
 
 The ECLS program provides extensive data on child development, school readiness, and early school experiences, including various factors like family, school, and community. Each child record contains assessment data, questionnaires, weights, imputation flags, and administrative variables. The raw dataset is expansive, containing 18,174 rows and 26,061 columns. 
 
